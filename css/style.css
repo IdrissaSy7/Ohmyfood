@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("polices/Roboto/Roboto-Regular.ttf");
+}
+
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+}
+
+/* Partie 1 Header */
+
+.entete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+header input {
+    /* Champ de recherche */
+    background: #eaeaea;
+    border: none;
+    height: 40px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.bordure1 {
+    /* Formulaire */
+    background: #eaeaea;
+    box-shadow: inset 0px 2px 3px #d3d3d3;
+    width: 100%;
+    height: 45px;
+    padding-top: 5px;
+}
+
+.bordure1 i {
+    /* Icone localisation */
+    margin-left: 70px;
+    margin-right: 10px;
+}
+
+.barrerecherche {
+    /* Icone + Recherche  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Partie 2 Section 1 */
+
+.section1 {
+    background: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section1 h1 {
+    font-size: 28px;
+}
+
+.section1 p {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.section1 input[type=submit] {
+    /* Bouton 'Explorer nos restaurants' */
+    background: rgb(174, 95, 219);
+    background: linear-gradient(0deg, #a65ddc 0%, #e471db 100%);
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 0px 3px #656565;
+}
