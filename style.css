@@ -9,6 +9,10 @@ body {
     padding: 0;
 }
 
+body a {
+    text-decoration: none;
+}
+
 /* Partie 1 Header */
 
 .entete {
@@ -75,7 +79,7 @@ header input {
     margin-bottom: 25px;
 }
 
-.section1 input[type=submit] {
+.section1 a {
     /* Bouton 'Explorer nos restaurants' */
     background: rgb(174, 95, 219);
     background: linear-gradient(0deg, #a65ddc 0%, #e471db 100%);
@@ -85,4 +89,62 @@ header input {
     border-radius: 50px;
     border: none;
     box-shadow: 0px 0px 3px #656565;
+    margin-bottom: 60px;
+    width: 70%;
+}
+
+/* Partie 3 Fonctionnement */
+
+.fonctionnement {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.fonctionnement h2 {
+    margin-top: 40px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.navfonctionnement i {
+    color: #7e7e7e;
+    margin-right: 20px;
+    margin-left: 5px;
+    font-size: 1.2em;
+}
+
+.navfonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navfonctionnement a {
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    width: 85%;
+    font-weight: bold;
+    border: none;
+    box-shadow: 2px 2px 10px #c6c6c6;
+}
+
+.btn {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #9356dc;
+    color: white;
+    position: relative;
+    padding: 2px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 0.9em;
 }
