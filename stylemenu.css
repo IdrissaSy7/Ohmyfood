@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("polices/Roboto/Roboto-Regular.ttf");
+}
+
+body {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+}
+
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Partie 1 Header */
+
+.entete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header i {
+    font-size: 1.3em;
+    position: absolute;
+    top: 22px;
+    left: 20px;
+}
+
+header img {
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Partie 5 Footer */
+
+footer {
+    background: #353535;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+footer a {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer i {
+    font-size: 0.8em;
+}
+
+footer img {
+    filter: invert(100%);
+    width: 100px;
+    height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer a,
+img {
+    margin-left: 20px;
+
+}
+
+.fa-solid.fa-utensils {
+    margin-right: 13px;
+}
+
+.fa-solid.fa-handshake-angle {
+    margin-right: 8px;
+}

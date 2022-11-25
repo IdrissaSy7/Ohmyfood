@@ -164,7 +164,7 @@ header input {
 
 /* Partie 4 Restaurants */
 
-.restaurants {
+#restaurants {
     background: #f7f7f7;
     margin-bottom: 30px;
 }
@@ -175,12 +175,12 @@ header input {
     align-items: center;
 }
 
-.restaurants h2 {
+#restaurants h2 {
     padding-top: 50px;
     margin-left: 15px;
 }
 
-.restaurants article {
+#restaurants article {
     background: rgb(255, 255, 255);
     margin-bottom: 20px;
     width: 90%;
@@ -189,7 +189,7 @@ header input {
     height: 240px;
 }
 
-.restaurants img {
+#restaurants img {
     width: 100%;
     height: 170px;
     margin-left: 0px;
@@ -197,23 +197,23 @@ header input {
     border-radius: 15px 15px 0px 0px;
 }
 
-.restaurants a {
+#restaurants a {
     color: black;
 }
 
-.restaurants h3,
+#restaurants h3,
 p {
     margin-left: 10px;
 }
 
-.restaurants h3 {
+#restaurants h3 {
     margin-bottom: -10px;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
 }
 
-.restaurants article {
+#restaurants article {
     display: flex;
     flex-direction: column;
     position: relative;
