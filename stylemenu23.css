@@ -61,208 +61,12 @@ header img:nth-child(2) {
 .titre {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.titre h1 {
-    font-family: "Shrikhand";
-    font-size: 24px;
-    font-weight: 500;
-    margin-right: 30px;
-    margin-left: -20px;
-}
-
-.titre i {
-    font-size: 22px;
-}
-
-.menu h2 {
-    font-size: 14px;
-    font-weight: 300;
-    margin-left: 7px;
-    padding-bottom: 3px;
-    border-bottom: 3px solid #99E2D0;
-    width: 35px;
-}
-
-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-article a {
-    border: 1px solid black;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    height: 55px;
-    font-weight: bold;
-    border: none;
-    box-shadow: 2px 2px 10px #c6c6c6;
-    position: relative;
-
-}
-
-article h3 {
-    font-size: 16px;
-    margin-bottom: -15px;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-
-article h4 {
-    font-size: 13px;
-    font-weight: 400;
-    margin-left: 10px;
-
-}
-
-article p {
-    position: absolute;
-    right: 15px;
-    bottom: -5px;
-    font-size: 14px;
-}
-
-.menu h2:nth-child(4) {
-    margin-top: 25px;
-}
-
-.menu h2:nth-child(6) {
-    margin-top: 25px;
-}
-
-.commander {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: -20px;
-}
-
-.commander a {
-    background: #9356DC;
-    background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-    color: white;
-    font-size: 18px;
-    padding: 16px;
-    border-radius: 50px;
-    border: none;
-    box-shadow: 0px 0px 3px #656565;
-    margin-bottom: 60px;
-    width: 50%;
-}
-
-/* Partie 3 Footer */
-
-footer {
-    background: #353535;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 25px;
-}
-
-footer a {
-    color: white;
-    margin-bottom: 10px;
-}
-
-footer i {
-    font-size: 0.8em;
-}
-
-footer img {
-    filter: invert(100%);
-    width: 100px;
-    height: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-footer a,
-img {
-    margin-left: 20px;
-
-}
-
-.fa-solid.fa-utensils {
-    margin-right: 13px;
-}
-
-.fa-solid.fa-handshake-angle {
-    margin-right: 8px;
-}@font-face {
-    font-family: 'Roboto';
-    src: url("polices/Roboto/Roboto-Regular.ttf");
-    font-family: 'Shrikhand';
-    src: url("polices/Shrikhand/Shrikhand-Regular.ttf");
-}
-
-body {
-    font-family: "Roboto";
-    margin: 0;
-    padding: 0;
-}
-
-body a {
-    text-decoration: none;
-    color: black;
-}
-
-/* Partie 1 Header */
-
-.entete {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-header i {
-    font-size: 1.3em;
-    position: absolute;
-    top: 22px;
-    left: 20px;
-}
-
-header img:nth-child(1) {
-    width: 150px;
-    height: 30px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-}
-
-header img:nth-child(2) {
-    width: 100%;
-    margin-left: 0px;
-    height: 250px;
-    object-fit: cover;
-}
-
-/* Partie 2 Section menu */
-
-.menu {
-    background: #f7f7f7;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 30px 30px 0px 0px;
-    position: relative;
-    top: -40px;
-    margin-bottom: -40px;
-}
-
-.titre {
-    display: flex;
-    align-items: center;
     justify-content: flex-start;
 }
 
 .titre h1 {
     font-family: "Shrikhand";
-    font-size: 24px;
+    font-size: 25px;
     font-weight: 500;
     margin-left: 10px;
 }
@@ -274,7 +78,7 @@ header img:nth-child(2) {
 }
 
 .menu h2 {
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 300;
     margin-left: 7px;
     padding-bottom: 3px;
@@ -295,7 +99,7 @@ article a {
     display: flex;
     flex-direction: column;
     width: 95%;
-    height: 55px;
+    height: 70px;
     font-weight: bold;
     border: none;
     box-shadow: 2px 2px 10px #c6c6c6;
@@ -304,14 +108,14 @@ article a {
 }
 
 article h3 {
-    font-size: 16px;
+    font-size: 19px;
     margin-bottom: -15px;
     margin-left: 10px;
     margin-top: 10px;
 }
 
 article h4 {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
     margin-left: 10px;
 
@@ -320,7 +124,7 @@ article h4 {
 article p {
     position: absolute;
     right: 15px;
-    bottom: -5px;
+    bottom: -2px;
     font-size: 14px;
 }
 
@@ -344,13 +148,13 @@ article p {
     background: #9356DC;
     background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
     color: white;
-    font-size: 18px;
+    font-size: 21px;
     padding: 16px;
     border-radius: 50px;
     border: none;
     box-shadow: 0px 0px 3px #656565;
     margin-bottom: 60px;
-    width: 50%;
+    width: 60%;
 }
 
 /* Partie 3 Footer */
