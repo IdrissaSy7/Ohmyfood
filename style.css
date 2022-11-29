@@ -136,6 +136,10 @@ header input {
     box-shadow: 2px 2px 10px #c6c6c6;
 }
 
+.fonctionnement a:nth-child(3) {
+    background: #f5edff;
+}
+
 .btn {
     width: 20px;
     height: 20px;
@@ -212,6 +216,7 @@ p {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+
 }
 
 #restaurants article {
@@ -225,6 +230,14 @@ p {
     position: relative;
     top: 10px;
     right: 25px;
+}
+
+.fa-solid.fa-heart {
+    font-size: 1.35em;
+    position: absolute;
+    bottom: 22px;
+    right: 23.7px;
+    opacity: 0;
 }
 
 .nouveau {
@@ -278,4 +291,53 @@ img {
 
 .fa-solid.fa-handshake-angle {
     margin-right: 8px;
+}
+
+/* Partie 6 Animation */
+
+/* Bouton Explorer nos restaurants */
+.section1 a:hover {
+    box-shadow: 0px 0px 9px #656565;
+    filter: brightness(1.07);
+}
+
+/* Animation coeur */
+
+@keyframes coeur {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    80% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    90% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fa-solid.fa-heart {
+    color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fa-solid.fa-heart:hover {
+    animation-name: coeur;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
 }

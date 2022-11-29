@@ -77,6 +77,13 @@ header img:nth-child(2) {
     right: 30px;
 }
 
+.fa-solid.fa-heart {
+    font-size: 1.5em;
+    right: 29px;
+    top: 27px;
+    opacity: 0;
+}
+
 .menu h2 {
     font-size: 17px;
     font-weight: 300;
@@ -203,4 +210,53 @@ img {
 
 .fa-solid.fa-handshake-angle {
     margin-right: 8px;
+}
+
+/* Partie 4 Animation */
+
+.commander a:hover {
+    /* Bouton Commander */
+    box-shadow: 0px 0px 9px #656565;
+    filter: brightness(1.07);
+}
+
+/* Animation coeur */
+
+@keyframes coeur {
+    0% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    80% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    90% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fa-solid.fa-heart {
+    color: transparent;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fa-solid.fa-heart:hover {
+    animation-name: coeur;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
 }
