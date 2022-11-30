@@ -136,7 +136,7 @@ header input {
     box-shadow: 2px 2px 10px #c6c6c6;
 }
 
-.fonctionnement a:nth-child(3) {
+.fonctionnement a:hover {
     background: #f5edff;
 }
 
