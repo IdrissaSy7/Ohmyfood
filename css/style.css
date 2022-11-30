@@ -133,11 +133,15 @@ header input {
     width: 85%;
     font-weight: bold;
     border: none;
-    box-shadow: 2px 2px 10px #c6c6c6;
+    box-shadow: 0px 0px 10px #c6c6c6;
 }
 
 .fonctionnement a:hover {
     background: #f5edff;
+}
+
+.navfonctionnement i:hover {
+    color: #9356dc;
 }
 
 .btn {
@@ -190,7 +194,7 @@ header input {
     margin-bottom: 20px;
     width: 90%;
     border-radius: 15px;
-    box-shadow: 2px 2px 10px #c6c6c6;
+    box-shadow: 0px 0px 10px #c6c6c6;
     height: 240px;
 }
 
@@ -340,4 +344,93 @@ img {
     animation-name: coeur;
     animation-duration: 700ms;
     animation-fill-mode: forwards;
+}
+
+
+/* Tablette 768px -> 992px */
+
+@media screen and (min-width: 768px) {
+
+    /* Partie 3 Fonctionnement */
+
+    .navfonctionnement {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navfonctionnement a {
+        display: flex;
+        margin-left: 25px;
+    }
+
+    .navfonctionnement a:nth-child(1) {
+        width: 40%;
+    }
+
+    .navfonctionnement a:nth-child(2) {
+        width: 40%;
+    }
+
+    .navfonctionnement a:nth-child(3) {
+        width: 50%;
+    }
+
+
+    /* Partie 4 Restaurants */
+
+    .menurestaurants {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #restaurants article {
+        margin: 10px;
+        width: 47%;
+        box-shadow: 0px 0px 10px #c6c6c6;
+    }
+}
+
+/* Desktop > 992px  */
+
+@media screen and (min-width: 992px) {
+
+    /* Partie 3 Fonctionnement */
+
+    .navfonctionnement {
+        flex-direction: row;
+    }
+
+    .navfonctionnement a {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+
+    .navfonctionnement a:nth-child(1) {
+        width: 30%;
+    }
+
+    .navfonctionnement a:nth-child(2) {
+        width: 30%;
+    }
+
+    .navfonctionnement a:nth-child(3) {
+        width: 30%;
+    }
+
+    /* Partie 4 Restaurants */
+
+    .menurestaurants {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #restaurants article {
+        margin: 10px;
+        width: 47%;
+        box-shadow: 0px 0px 10px #c6c6c6;
+    }
 }
