@@ -181,6 +181,7 @@ article p {
     box-shadow: 0px 0px 3px #656565;
     margin-bottom: 60px;
     width: 60%;
+    max-width: 350px;
 }
 
 /* Partie 3 Footer */
@@ -229,6 +230,7 @@ img {
     /* Bouton Commander */
     box-shadow: 0px 0px 9px #656565;
     filter: brightness(1.07);
+    transition-duration: 600ms;
 }
 
 /* Animation coeur */
@@ -272,9 +274,48 @@ img {
     animation-fill-mode: forwards;
 }
 
-/* Tablette > 992px */
+/* Apparition progressive */
 
-@media screen and (min-width: 992px) {
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.entrees a:nth-child(1),
+.plats a:nth-child(1),
+.desserts a:nth-child(1) {
+    animation: fadein 500ms;
+}
+
+.entrees a:nth-child(2),
+.plats a:nth-child(2),
+.desserts a:nth-child(2) {
+    animation: fadein 1000ms;
+}
+
+.entrees a:nth-child(3),
+.plats a:nth-child(3),
+.desserts a:nth-child(3) {
+    animation: fadein 1400ms;
+}
+
+.entrees a:nth-child(4) {
+    animation: fadein 1700ms;
+}
+
+/* Desktop > 1024px */
+
+@media screen and (min-width: 1024px) {
 
     /* Partie 2 Section menu */
 
@@ -317,7 +358,7 @@ img {
     }
 
     .fa-sharp.fa-solid.fa-basket-shopping {
-        margin-right: 20px;
+        margin-right: 1px;
     }
 
     .menu h2:nth-child(3) {

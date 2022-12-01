@@ -93,6 +93,7 @@ header input {
     box-shadow: 0px 0px 3px #656565;
     margin-bottom: 60px;
     width: 70%;
+    max-width: 350px;
 }
 
 /* Partie 3 Fonctionnement */
@@ -303,6 +304,7 @@ img {
 .section1 a:hover {
     box-shadow: 0px 0px 9px #656565;
     filter: brightness(1.07);
+    transition-duration: 600ms;
 }
 
 /* Animation coeur */
@@ -376,7 +378,6 @@ img {
         width: 50%;
     }
 
-
     /* Partie 4 Restaurants */
 
     .menurestaurants {
@@ -436,7 +437,6 @@ img {
 
     #restaurants article:hover {
         box-shadow: 0px 0px 10px #000000;
-        transform: translateX(3px);
-        transition-duration: 300ms;
+        transition-duration: 700ms;
     }
 }
