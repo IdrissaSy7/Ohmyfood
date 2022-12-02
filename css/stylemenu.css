@@ -334,34 +334,12 @@ img {
     font-size: 1.5em;
     padding: 18.5px;
     width: 30px;
-    opacity: 1;
+    transition: all 500ms ease;
 }
 
 .menu article a:hover .fa-solid.fa-circle-check {
-    opacity: 1;
-    animation: check 600ms forwards;
-}
-
-@keyframes check {
-
-    0% {
-        opacity: 0;
-    }
-
-    20% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 1;
-        position: relative;
-        margin-right: 65px;
-        transform: rotate(360deg);
-    }
+    margin-right: 65px;
+    transform: rotate(360deg);
 }
 
 /* Desktop > 1024px */
