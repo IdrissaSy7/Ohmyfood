@@ -108,13 +108,22 @@ article a {
     border-radius: 15px;
     margin-bottom: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 95%;
-    height: 70px;
+    height: 60px;
     font-weight: bold;
     border: none;
     box-shadow: 0px 0px 10px #c6c6c6;
-    position: relative;
+    overflow: hidden;
+}
+
+.bloc {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
 }
 
 article h3 {
@@ -122,10 +131,10 @@ article h3 {
     margin-bottom: -20px;
     margin-left: 10px;
     margin-top: 10px;
+    width: 93%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 88%;
 }
 
 article h4 {
@@ -133,17 +142,16 @@ article h4 {
     font-weight: 400;
     margin-left: 10px;
     margin-bottom: -20px;
+    width: 93%;
+    height: 20px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 82%;
 }
 
-article p {
-    position: absolute;
-    right: 10px;
-    bottom: 2px;
-    font-weight: 500;
+article a p {
+    margin-top: 33px;
+    margin-right: -50px;
 }
 
 #decalage {
@@ -213,7 +221,6 @@ footer img {
 footer a,
 img {
     margin-left: 20px;
-
 }
 
 .fa-solid.fa-utensils {
@@ -294,7 +301,7 @@ img {
 .entrees a:nth-child(1),
 .plats a:nth-child(1),
 .desserts a:nth-child(1) {
-    animation: fadein 500ms;
+    animation: fadein 400ms;
 }
 
 .entrees a:nth-child(2),
@@ -311,6 +318,50 @@ img {
 
 .entrees a:nth-child(4) {
     animation: fadein 1700ms;
+}
+
+/* Animation hover menu */
+
+.menu span {
+    background: #99E2D0;
+    border-radius: 0px 15px 15px 0px;
+    position: relative;
+    left: 68px;
+}
+
+.fa-solid.fa-circle-check {
+    color: white;
+    font-size: 1.5em;
+    padding: 18.5px;
+    width: 30px;
+    opacity: 1;
+}
+
+.menu article a:hover .fa-solid.fa-circle-check {
+    opacity: 1;
+    animation: check 600ms forwards;
+}
+
+@keyframes check {
+
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        position: relative;
+        margin-right: 65px;
+        transform: rotate(360deg);
+    }
 }
 
 /* Desktop > 1024px */
@@ -333,7 +384,7 @@ img {
         background: #f7f7f7;
         box-shadow: 0px 0px 10px #c6c6c6;
         width: 40%;
-        height: 840px;
+        height: 750px;
         position: absolute;
         right: 20px;
         top: 118px;
@@ -341,7 +392,7 @@ img {
     }
 
     .panier2 {
-        height: 920px;
+        height: 820px;
     }
 
     .panier h2 {
