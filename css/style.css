@@ -342,22 +342,22 @@ img {
 
     70% {
         opacity: 1;
-        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
     }
 
     80% {
         opacity: 1;
-        transform: scale(1);
+        -webkit-transform: scale(1);
     }
 
     90% {
         opacity: 1;
-        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
     }
 
     100% {
         opacity: 1;
-        transform: scale(1);
+        -webkit-transform: scale(1);
     }
 }
 
@@ -415,11 +415,11 @@ img {
 @-webkit-keyframes look {
 
     0% {
-        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
     }
 
     99.99% {
-        transform: rotate(720deg);
+        -webkit-transform: rotate(720deg);
         opacity: 1;
     }
 
