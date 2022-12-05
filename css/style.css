@@ -386,6 +386,8 @@ img {
     }
 }
 
+/* Cacher la page pendant l'animation */
+
 .hide {
     animation: hide 1500ms forwards;
 }
