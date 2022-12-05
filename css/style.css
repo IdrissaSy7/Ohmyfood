@@ -353,10 +353,10 @@ img {
 .loaderrotate {
     width: 50px;
     height: 50px;
-    border-top: 5px solid #9356DC;
-    border-right: 5px solid #FF79DA;
-    border-bottom: 5px solid #99E2D0;
-    border-left: 5px solid #FF79DA;
+    border-top: 7px solid #9356DC;
+    border-right: 7px solid #FF79DA;
+    border-bottom: 7px solid #99E2D0;
+    border-left: 7px solid #FF79DA;
     border-radius: 50%;
     box-shadow: inset 0px 0px 5px;
     margin: auto;
