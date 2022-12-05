@@ -102,6 +102,7 @@ header input {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    margin-bottom: -20px;
 }
 
 .fonctionnement h2 {
@@ -367,7 +368,7 @@ img {
     bottom: 0;
     animation: look 900ms forwards 2;
     -o-animation: look 900ms forwards 2;
-    -webkit-animation: look 700ms forwards 2;
+    -webkit-animation: look 1900ms forwards 2;
 }
 
 @keyframes look {
@@ -391,7 +392,7 @@ img {
 .hide {
     animation: hide 1900ms forwards;
     -o-animation: hide 1900ms forwards;
-    -webkit-animation: hide 2000ms forwards;
+    -webkit-animation: hide 2900ms forwards;
 }
 
 @keyframes hide {
