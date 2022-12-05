@@ -367,7 +367,7 @@ img {
     bottom: 0;
     animation: look 900ms forwards 2;
     -o-animation: look 900ms forwards 2;
-    -webkit-animation: look 900ms forwards 2;
+    -webkit-animation: look 700ms forwards 2;
 }
 
 @keyframes look {
@@ -391,7 +391,7 @@ img {
 .hide {
     animation: hide 1900ms forwards;
     -o-animation: hide 1900ms forwards;
-    -webkit-animation: hide 1900ms forwards;
+    -webkit-animation: hide 2000ms forwards;
 }
 
 @keyframes hide {
@@ -399,7 +399,7 @@ img {
         opacity: 0;
     }
 
-    95% {
+    65% {
         opacity: 0;
     }
 
