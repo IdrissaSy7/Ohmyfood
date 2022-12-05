@@ -390,6 +390,8 @@ img {
 
 .hide {
     animation: hide 1900ms forwards;
+    -o-animation: hide 1900ms forwards;
+    -webkit-animation: hide 1900ms forwards;
 }
 
 @keyframes hide {
