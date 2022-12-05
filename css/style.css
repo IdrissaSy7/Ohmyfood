@@ -318,30 +318,21 @@ img {
     70% {
         opacity: 1;
         transform: scale(1.2);
-        -o-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
     }
 
     80% {
         opacity: 1;
         transform: scale(1);
-        -o-transform: scale(1);
-        -webkit-transform: scale(1);
     }
 
     90% {
         opacity: 1;
         transform: scale(1.2);
-        -o-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
     }
 
     100% {
         opacity: 1;
         transform: scale(1);
-        -o-transform: scale(1);
-        -webkit-transform: scale(1);
-
     }
 }
 
@@ -383,16 +374,12 @@ img {
 @-webkit-keyframes look {
 
     0% {
-        animation: rotate(1deg);
-        -o-transform: rotate(1deg);
-        -webkit-transform: rotate(1deg);
+        transform: rotate(0deg);
     }
 
     99.99% {
 
-        animation: rotate(719deg);
-        -o-transform: rotate(719deg);
-        -webkit-transform: rotate(719deg);
+        transform: rotate(720deg);
         opacity: 1;
     }
 
@@ -409,7 +396,7 @@ img {
     -webkit-animation: hide 2900ms forwards;
 }
 
-@-webkit-keyframes hide {
+@keyframes hide {
     0% {
         opacity: 0;
     }
