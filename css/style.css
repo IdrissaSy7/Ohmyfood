@@ -317,22 +317,31 @@ img {
 
     70% {
         opacity: 1;
+        transform: scale(1.2);
+        -o-transform: scale(1.2);
         -webkit-transform: scale(1.2);
     }
 
     80% {
         opacity: 1;
+        transform: scale(1);
+        -o-transform: scale(1);
         -webkit-transform: scale(1);
     }
 
     90% {
         opacity: 1;
+        transform: scale(1.2);
+        -o-transform: scale(1.2);
         -webkit-transform: scale(1.2);
     }
 
     100% {
         opacity: 1;
+        transform: scale(1);
+        -o-transform: scale(1);
         -webkit-transform: scale(1);
+
     }
 }
 
@@ -366,19 +375,24 @@ img {
     right: 0;
     top: 0;
     bottom: 0;
-    animation: look 900ms forwards 2;
-    -o-animation: look 900ms forwards 2;
+    animation: look 1900ms forwards 2;
+    -o-animation: look 1900ms forwards 2;
     -webkit-animation: look 1900ms forwards 2;
 }
 
 @-webkit-keyframes look {
 
     0% {
-        -webkit-transform: rotate(0deg);
+        animation: rotate(1deg);
+        -o-transform: rotate(1deg);
+        -webkit-transform: rotate(1deg);
     }
 
     99.99% {
-        -webkit-transform: rotate(720deg);
+
+        animation: rotate(719deg);
+        -o-transform: rotate(719deg);
+        -webkit-transform: rotate(719deg);
         opacity: 1;
     }
 
@@ -390,12 +404,12 @@ img {
 /* Cacher la page pendant l'animation */
 
 .hide {
-    animation: hide 1900ms forwards;
-    -o-animation: hide 1900ms forwards;
+    animation: hide 2900ms forwards;
+    -o-animation: hide 2900ms forwards;
     -webkit-animation: hide 2900ms forwards;
 }
 
-@keyframes hide {
+@-webkit-keyframes hide {
     0% {
         opacity: 0;
     }
