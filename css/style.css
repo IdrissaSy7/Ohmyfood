@@ -25,9 +25,7 @@ body a {
 header img {
     width: 150px;
     height: 30px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 5px;
+    margin: 20px 0px 10px 5px;
 }
 
 header input {
@@ -50,8 +48,7 @@ header input {
 
 .bordure1 i {
     /* Icone localisation */
-    margin-left: 70px;
-    margin-right: 10px;
+    margin: 0px 10px 0px 70px;
 }
 
 .barrerecherche {
@@ -77,8 +74,7 @@ header input {
 
 .section1 p {
     font-size: 16px;
-    margin-top: 0px;
-    margin-bottom: 25px;
+    margin: 0px 0px 25px 0px;
 }
 
 .section1 a {
@@ -106,15 +102,12 @@ header input {
 }
 
 .fonctionnement h2 {
-    margin-top: 40px;
-    margin-left: 15px;
-    margin-bottom: 30px;
+    margin: 40px 0px 30px 15px;
 }
 
 .navfonctionnement i {
     color: #7e7e7e;
-    margin-right: 20px;
-    margin-left: -5px;
+    margin: 0px 20px 0px -5px;
     font-size: 1.2em;
 }
 
@@ -222,7 +215,6 @@ p {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-
 }
 
 #restaurants article {
@@ -232,6 +224,7 @@ p {
 }
 
 .fa-regular.fa-heart {
+    /* Coeur vide */
     font-size: 1.2em;
     position: relative;
     top: 10px;
@@ -239,6 +232,7 @@ p {
 }
 
 .fa-solid.fa-heart {
+    /* Coeur rempli */
     font-size: 1.35em;
     position: absolute;
     bottom: 22px;
@@ -288,7 +282,6 @@ footer img {
 footer a,
 img {
     margin-left: 20px;
-
 }
 
 .fa-solid.fa-utensils {
@@ -349,9 +342,10 @@ img {
     animation-fill-mode: forwards;
 }
 
-/* Loader */
+/* Loader  */
 
-.loaderrotate {
+.loaderrotate,
+.loaderrotate2 {
     width: 50px;
     height: 50px;
     border-top: 7px solid #9356DC;
@@ -366,9 +360,17 @@ img {
     right: 0;
     top: 0;
     bottom: 0;
-    animation: look 1900ms forwards 2;
-    -o-animation: look 1900ms forwards 2;
-    -webkit-animation: look 1900ms forwards 2;
+    animation: look 1900ms forwards 2 reverse;
+    -o-animation: look 1900ms forwards 2 reverse;
+    -webkit-animation: look 1900ms forwards 2 reverse;
+}
+
+.loaderrotate2 {
+    width: 70px;
+    height: 70px;
+    animation: look 900ms forwards 2;
+    -o-animation: look 900ms forwards 2;
+    -webkit-animation: look 900ms forwards 2;
 }
 
 @keyframes look {
@@ -388,7 +390,7 @@ img {
     }
 }
 
-/* Cacher la page pendant l'animation */
+/* Cacher la page pendant l'animation  */
 
 .hide {
     animation: hide 2900ms forwards;
@@ -431,10 +433,7 @@ img {
         margin-left: 25px;
     }
 
-    .navfonctionnement a:nth-child(1) {
-        width: 40%;
-    }
-
+    .navfonctionnement a:nth-child(1),
     .navfonctionnement a:nth-child(2) {
         width: 40%;
     }
@@ -474,14 +473,8 @@ img {
         margin-left: 20px;
     }
 
-    .navfonctionnement a:nth-child(1) {
-        width: 30%;
-    }
-
-    .navfonctionnement a:nth-child(2) {
-        width: 30%;
-    }
-
+    .navfonctionnement a:nth-child(1),
+    .navfonctionnement a:nth-child(2),
     .navfonctionnement a:nth-child(3) {
         width: 30%;
     }
