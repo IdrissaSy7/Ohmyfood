@@ -368,9 +368,9 @@ img {
 .loaderrotate2 {
     width: 70px;
     height: 70px;
-    animation: look 900ms forwards 2;
-    -o-animation: look 900ms forwards 2;
-    -webkit-animation: look 900ms forwards 2;
+    animation: look 900ms forwards infinite;
+    -o-animation: look 900ms forwards infinite;
+    -webkit-animation: look 900ms forwards infinite;
 }
 
 @keyframes look {
