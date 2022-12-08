@@ -135,7 +135,7 @@ header input {
     background: #f5edff;
 }
 
-.navfonctionnement i:hover {
+.fonctionnement a:hover i {
     color: #9356dc;
 }
 
